@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --primary-color: #ff1a1a;
+  --secondary-color: #5cd65c;
+  --medium-color: #ff4d94;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+  --website-width: 1100px;
+}
+
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--website-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn-primary {
+  background: #000;
+  color: var(--light-color);
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
+.btn-dark {
+  background: var(--dark-color);
+  color: var(--light-color);
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
+/* Navbar */
+#navbar {
+  background: #222;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+#navbar .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li {
+  padding: 1rem 2rem;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding-bottom: 0.3rem;
+  transition: 0.5;
+}
+
+#navbar ul li a:hover {
+  border-bottom: 3px solid var(--medium-color);
+}
+
+#navbar .logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.logo img {
+  width: 60px;
+  margin: 0 1rem;
+}
+
+.logo h3 {
+  font-size: 1.5rem;
+}
+
+/* Showcase */
+#showcase {
+  position: relative;
+  height: 100vh;
+  color: #222;
+}
+
+#showcase::before {
+  content: "";
+  background: url("../img/showcase.jpg") no-repeat center center / cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+  padding-top: 15%;
+  color: #000;
+  text-align: center;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#showcase .showcase-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Section: Shopping Cart */
+#shopping-cart {
+  text-align: center;
+  margin: 2rem;
+}
+
+#shopping-cart .carts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center;
+}
+
+#shopping-cart .cart-title {
+  padding: 2rem;
+  margin: 2rem;
+}
+
+#shopping-cart h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #111;
+}
+
+#shopping-cart .cart .cart-price {
+  font-size: 1.5rem;
+}
+
+#shopping-cart .cart h4 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+}
+
+#shopping-cart .cart a {
+  margin-top: 1rem;
+}
+
+#shopping-cart .cart img:hover {
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+/* Section: Article */
+#article {
+  margin: 5rem;
+}
+#article .article-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+}
+
+#article .icons {
+  padding: 1.3rem;
+  color: pink;
+}
+
+#article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--medium-color);
+}
+
+/* Footer */
+#footer {
+  background: url("../img/footer.jpg") no-repeat center center / cover;
+  color: #f4f4f4;
+  height: 20rem;
+}
+
+#footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 20rem;
+  padding: 2rem;
+  line-height: 2;
+  font-size: 1.1rem;
+}
+
+#footer .footer-content a:hover {
+  color: #777;
+}
+
+#footer .sponsors ul {
+  display: flex;
+}
+
+#footer .sponsors img {
+  width: 50px;
+  margin-right: 0.8rem;
+  margin-top: 1rem;
+}

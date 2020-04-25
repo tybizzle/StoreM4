@@ -1,0 +1,42 @@
+#navbar ul li {
+  padding: 1rem;
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  #navbar .navbar-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #navbar .logo {
+    margin-bottom: -0.8rem;
+  }
+
+  /* Stack Grid Containers */
+  #shopping-cart .carts,
+  #article .article-container {
+    grid-template-columns: 1fr;
+  }
+
+  #footer {
+    height: 40rem;
+  }
+
+  #footer .footer-content {
+    flex-direction: column;
+    height: 40rem;
+  }
+
+  #footer .sponsors ul li:last-child {
+    display: none;
+  }
+}
+
+/* Smaller Mobile Devices */
+
+@media (max-width: 375px) {
+  #showcase .showcase-content h1 {
+    line-height: 1.2;
+  }
+}
